@@ -43342,9 +43342,11 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>182 200 796 473 0 0 1280 800 </string>
+	<string>182 266 958 451 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>232 107 650 452 0 0 1280 800 </string>
+	<string>232 107 650 452 0 0 1280 777 </string>
+	<key>NSWindow Frame iTerm Window 1</key>
+	<string>152 68 650 452 0 0 1280 800 </string>
 	<key>NeverWarnAboutShortLivedSessions_C72F76E6-A905-47C4-8EF2-5FAE8F9CCBE7</key>
 	<true/>
 	<key>NeverWarnAboutShortLivedSessions_C72F76E6-A905-47C4-8EF2-5FAE8F9CCBE7_selection</key>
@@ -45395,7 +45397,7 @@
 	<key>StretchTabsToFillBar</key>
 	<true/>
 	<key>SwitchPaneModifier</key>
-	<integer>4</integer>
+	<integer>9</integer>
 	<key>SwitchTabModifier</key>
 	<integer>5</integer>
 	<key>TabStyle</key>

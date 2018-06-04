@@ -6,18 +6,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'flazz/vim-colorschemes'
 Plugin 'lfilho/cosco.vim'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 call vundle#end()            " required
 """"""""""END VUNDLE """""""""""""
 
-let g:airline_theme='jellybeans'
+let g:airline_theme='minimalist'
 
 "Custom vim
-
+let g:auto_save = 1 
 set number
 syntax on
 inoremap jk <Esc>
@@ -36,8 +32,15 @@ let g:mapleader = ","
 
 " Fast saving
 nmap <leader>m :w!<cr>
-nmap <leader>n :wq!<cr>
+nmap <leader>w :wq!<cr>
 vnoremap t :'<,'>!pbcopy<cr>u
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDTREE 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let NERDTreeQuitOnOpen=1
+nnoremap <leader>a :w<CR>:NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -75,6 +78,6 @@ set noswapfile
 " edit vimrc/zshrc and load vimrc bindings
 nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>ez :vsp ~/.zshrc<CR>
-nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>s :source $MYVIMRC<CR>
 map <S-Down> <C-E>
 map <S-Up> <C-Y>map <S-Down> <C-E>noremap 
