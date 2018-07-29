@@ -7,14 +7,24 @@ call vundle#begin()
 Plugin 'flazz/vim-colorschemes'
 Plugin 'lfilho/cosco.vim'
 Plugin 'VundleVim/Vundle.vim'
+Bundle 'takac/vim-hardtime'
 call vundle#end()            " required
 """"""""""END VUNDLE """""""""""""
 
 let g:airline_theme='minimalist'
 
+"HardTime
+let g:hardtime_maxcount = 4
+let g:hardtime_default_on = 4
+let g:list_of_normal_keys = ["j", "k", "-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_visual_keys = ["h", "j", "k", "l", "-", "+", "<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_insert_keys = ["<UP>", "<DOWN>", "<LEFT>", "<RIGHT>"]
+let g:list_of_disabled_keys = []
+
 "Custom vim
 let g:auto_save = 1 
 set number
+set number relativenumber
 syntax on
 inoremap jk <Esc>
 
